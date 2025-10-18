@@ -17,5 +17,7 @@ on:
 jobs:
   call-workflow-passing-data:
     uses: balakrish-tw/test/.github/workflows/test.yml@main
+    with:
+      environment: test
     secrets:
       HELLO: ${{ secrets.HELLO }}
