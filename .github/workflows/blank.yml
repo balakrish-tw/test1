@@ -17,4 +17,5 @@ on:
 jobs:
   call-workflow-passing-data:
     uses: balakrish-tw/test/.github/workflows/test.yml@main
-    secrets: inherit
+    secrets:
+      HELLO: ${{ secrets.HELLO }}
