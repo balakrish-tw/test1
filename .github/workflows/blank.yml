@@ -19,5 +19,4 @@ jobs:
     uses: balakrish-tw/test/.github/workflows/test.yml@main
     with:
       environment: test
-    secrets:
-      HELLO: ${{ secrets.HELLO }}
+    secrets: inherit
